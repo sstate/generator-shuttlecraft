@@ -23,5 +23,5 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:sstate/generator-shuttlecraft.git"
-  },
+  }
 }
