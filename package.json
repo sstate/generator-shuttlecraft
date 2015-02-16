@@ -3,7 +3,9 @@
   "version": "1.0.1",
   "description": "A small reactjs yeoman generator",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "rectjs",
+    "yeoman"
   ],
   "main": "app/index.js",
   "scripts": {
