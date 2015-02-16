@@ -1,7 +1,7 @@
 {
   "name": "generator-shuttlecraft",
-  "version": "1.0.0",
-  "description": "A small reactjs generator",
+  "version": "1.0.1",
+  "description": "A small reactjs yeoman generator",
   "keywords": [
     "yeoman-generator"
   ],
@@ -19,5 +19,9 @@
     "yosay": "^1.0.0"
   },
   "author": "rtorr <rtorruellas@gmail.com> (http://rtorr.com/)",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sstate/generator-shuttlecraft.git"
+  },
 }
