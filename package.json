@@ -1,6 +1,6 @@
 {
   "name": "generator-shuttlecraft",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A small reactjs yeoman generator",
   "keywords": [
     "yeoman-generator",

@@ -137,6 +137,7 @@ var GeneratorGenerator = module.exports = yeoman.generators.Base.extend({
   writing: {
     projectfiles: function () {
       this.mkdir('dist')
+      this.template('util/jest_preprocessor.js', 'util/jest_preprocessor.js');
       this.template('examples/index.html', 'examples/index.html');
       this.template('examples/app.js', 'examples/app.js');
       this.template('src/components/HelloWorld.js', 'src/components/HelloWorld.js');
