@@ -83,22 +83,6 @@ var GeneratorGenerator = module.exports = yeoman.generators.Base.extend({
         name: 'project',
         message: 'What is the name of your reactjs project?',
         default: 'app'
-      }, {
-        type: 'confirm',
-        name: 'askNameAgain',
-        message: 'The name above already exists on npm, choose another?',
-        default: true,
-        when: function (answers) {
-          var done = this.async();
-          var name = answers.appname;
-          npmName(name, function (err, available) {
-            if (!available) {
-              done(true);
-            }
-
-            done(false);
-          });
-        }
       }];
 
       this.prompt(prompts, function (props) {
@@ -137,6 +121,7 @@ var GeneratorGenerator = module.exports = yeoman.generators.Base.extend({
   writing: {
     projectfiles: function () {
       this.mkdir('dist')
+      this.template('LICENSE', 'LICENSE');
       this.template('util/jest_preprocessor.js', 'util/jest_preprocessor.js');
       this.template('examples/index.html', 'examples/index.html');
       this.template('examples/app.js', 'examples/app.js');
