@@ -4,6 +4,8 @@
 
 Shuttlecraft is a minimal yeoman generator for creating react modules to distribute on npm.
 
+## Install
+
 ```
 
 npm install -g yo
