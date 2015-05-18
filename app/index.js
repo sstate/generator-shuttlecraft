@@ -128,9 +128,12 @@ var GeneratorGenerator = module.exports = yeoman.generators.Base.extend({
       this.template('src/components/HelloWorld.js', 'src/components/HelloWorld.js');
       this.template('src/index.js', 'src/index.js');
       this.template('_travis.yml', '.travis.yml');
+      this.template('_editorconfig', '.editorconfig');
       this.template('README.md');
       this.template('eslintrc', '.eslintrc');
       this.template('_package.json', 'package.json');
+      this.template('_server.js', 'server.js');
+      this.template('_webpack.config.js', 'webpack.config.js');
       this.copy('gitignore', '.gitignore');
     }
   },

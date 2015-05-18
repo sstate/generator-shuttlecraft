@@ -10,21 +10,10 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "examples": "watchify ./examples/app.js -o ./dist/_bundle.js & npm run local_server",
-    "local_server": "echo Open examples on http:localhost:8000/examples && python -m SimpleHTTPServer",
+    "start": "NODE_ENV=DEV node ./server.js",
+    "build": "NODE_ENV=PRODUCTION webpack",
     "lint": "eslint ./src",
-    "test": "jest"
-  },
-  "browserify": {
-    "transform": [
-      [
-        "reactify",
-        "babelify",
-        {
-          "ext": ".js"
-        }
-      ]
-    ]
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "jest": {
     "scriptPreprocessor": "./util/jest_preprocessor.js",
@@ -36,17 +25,18 @@
     ]
   },
   "peerDependencies": {
-    "react": "0.12.x"
+    "react": "0.13.x"
   },
   "devDependencies": {
-    "babel-core": "^4.0.0",
-    "babelify": "^5.0.4",
-    "browserify": "^9.0.3",
-    "eslint": "^0.16.1",
-    "jest-cli": "^0.2.2",
-    "reactify": "^1.0.0",
-    "watchify": "^2.3.0",
-    "react": "^0.12.2",
-    "react-tools": "^0.12.2"
+    "babel-core": "^5.4.2",
+    "babel-loader": "^5.1.0",
+    "es5-shim": "^4.1.1",
+    "eslint": "^0.20.0",
+    "eslint-plugin-react": "^2.2.0",
+    "react-hot-loader": "^1.2.5",
+    "node-libs-browser": ">= 0.4.0 <=0.5.0",
+    "webpack": "^1.8.9",
+    "webpack-dev-server": "^1.8.2",
+    "react": "0.13.x"
   }
 }
